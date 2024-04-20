@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Workouts and Diets</title>
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+    <div class="workout-background-image">
+        <div class="workout-container">
+            <h1 class="workout-heading">Diet And Workouts For You!</h1>
+            <form id="weightForm">
+                <label for="gender">Select Your Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+                <label for="goal">Select Your Goal:</label>
+                <select id="goal" name="goal">
+                    <option value="gain">Gain Weight</option>
+                    <option value="lose">Lose Weight</option>
+                    <option value="maintain">Maintain Weight</option>
+                </select>
+                <input type="submit" value="Submit">
+            </form>
+            <div class="result" id="result">
+                <br>
+                <h1 class="rec-exc"></h1>
+                <br>
+                <ul class="rec-ex-list">
+
+                </ul>
+                <br>
+                <br>
+                <br>
+                <h1 class="rec-diet"></h1>
+                <br>
+                <ul class="rec-diet-list">
+                    
+                </ul>
+
+            </div>
+        </div>
+        
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

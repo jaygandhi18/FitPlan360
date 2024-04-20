@@ -1,0 +1,195 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    background-color: black;
+    
+    font-family: 'Poppins', sans-serif;
+}
+/*Styling for the home page*/
+.background-image{
+    background-image: url("background1.jpg");
+    background-size: cover;
+    height:750px;
+    width: auto;
+}
+
+nav{   
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    flex-wrap: wrap;
+}
+
+nav ul{
+    margin-right: 80px;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 40px;
+    margin-right: 50px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 22px;
+    position: relative;
+}
+
+.title{
+    width: 350px;
+    font-size: 30px;
+    font-weight: 900;
+    margin-left: 30px;
+    color: white;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 100%;
+    height: 3px;
+    background: grey;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+
+
+.header{
+    text-align: center;
+    margin-top: 200px;
+}
+.heading{
+    color: #fff;
+    font-size: 80px;
+    color: #fff;
+}
+
+/*page2 - workout and diet plans styling*/
+
+.workout-background-image{
+    background-image: url("workout-man.jpg");
+    background-size: cover;
+    height:1200px;
+    width: auto;
+}
+
+
+
+
+.workout-container {
+    margin-top: 50px;
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 10px;
+}
+.workout-heading{
+    color:#fff;
+    text-align:center;
+    font-weight: 900;
+}
+
+form {
+    margin-top: 20px;
+}
+label {
+    color:beige;
+    font-family: sans-serif;
+    font-weight: 800;
+    display: block;
+    margin-bottom: 8px;
+}
+select, input[type="submit"] {
+    color: #fff;
+    font-family: sans-serif;
+    width: 100%;
+    padding: 10px;
+    margin-top: 6px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    box-sizing: border-box;
+    background-color: black;
+}
+select {
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+.result {
+    font-family: sans-serif;
+    margin-top: 20px;
+    color:whitesmoke;
+}
+
+.result li{
+    font-size:25px;
+}
+
+/*page3 workout tracker page styling*/
+
+.tracker-background {
+    margin: 0px;
+    padding: 0px;
+    font-family: Arial, sans-serif;
+    background-image: url("background3.jpg"); 
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    height:800px;
+    width:100%;
+}
+.tracker-container {
+    width: 45%;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, 0.5); 
+    padding: 20px;
+    border-radius: 10px;
+}
+h1 {
+    text-align: center;
+}
+input[type="text"] {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+.tracker-button {
+    padding: 10px 20px;
+    background-color: #555;
+    border: none;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tracker-button:hover {
+    background-color: #777;
+}
+.workout-item {
+    background-color: #555;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.workout-item input[type="checkbox"] {
+    margin-right: 10px;
+}
+.workout-item.completed {
+    text-decoration: line-through;
+    opacity: 0.5;
+}
